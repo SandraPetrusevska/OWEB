@@ -4,7 +4,10 @@
         <meta charset="utf-8">
         <title>Галерија</title>
         <link rel="stylesheet" type="text/css" href="stilovi.css">
+        <script src="galerijaJava.js"></script>
     </head>
+
+<script src="galerijaJava2.js"></script>
     <body>
         <header>
             <img src="logo6.png" width="180" height="50" alt="Сандра Петрушевска"> 
@@ -20,6 +23,293 @@
          </nav>
          </header>
          <p class="header">Галерија</p>
+        
+         <p>
+         <div> <div>
+        <img src="solun.jpg" width="300" height="400" alt="Солун" class="galerijaImg1">
+        <img src="paljuri.jpg" width="300" height="400" alt="Паљури" class="galerijaImg1">
+        <img src="paris2.png" width="300" height="400" alt="Парис" class="galerijaImg1">
+        <img src="belgrad2.jpg" width="300" height="400" alt="Белград" class="galerijaImg1">
+        <button onclick="Counter1(button1)" id="button1"  class="firstButtonLike">
+            <span id="heart1" style="font-size: x-large;">&#10084;</span> 
+            <label id="likes1" style="color:black">0</label>
+        </button>
+        <button onclick="Counter2(button2)" id="button2"  class="buttonLike">
+            <span id="heart2" style="font-size: x-large;">&#10084;</span> 
+            <label id="likes2" style="color:black">0</label>
+        </button>
+        <button onclick="Counter3(button3)" id="button3"  class="buttonLike2">
+            <span id="heart3" style="font-size: x-large;">&#10084;</span> 
+            <label id="likes3" style="color:black">0</label>
+        </button>
+        <button onclick="Counter4(button4)" id="button4"  class="buttonLike2">
+            <span id="heart4" style="font-size: x-large;">&#10084;</span> 
+            <label id="likes4" style="color:black">0</label>
+        </button>
+        </div>
+        <form  class="formMargin">
+        <br>
+        <input type="text"  size="31" maxlength="100" placeholder="Напиши коментар..." id="input1">
+        <input type="button" value="Постирај" id="k1" onclick="komentiraj(this)">
+        <div id="komentar1"></div>
+        </form>
+        <form class="formMargin" >
+        <br>
+            <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input2">
+            <input type="button" value="Постирај" id="k2" onclick="komentiraj(this)" >
+            <div id="komentar2"></div>
+            </form>
+            <form  class="formMargin">
+            <br>
+            <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input3">
+            <input type="button" value="Постирај" id="k3" onclick="komentiraj(this)">
+            <div id="komentar3"></div>
+        </form>
+        <form class="formMargin">
+        <br>
+            <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input4">
+            <input type="button" value="Постирај" id="k4" onclick="komentiraj(this)">
+            <div id="komentar4"></div>
+        </form>
+        </div>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <p>
+        <div> <div> 
+            <img src="amigos.jpg" width="300" height="400" alt="Амигос" class="galerijaImg1"  >
+            <img src="markt.jpg" width="300" height="400" alt="Маркт" class="galerijaImg1">
+            <img src="sladoledi.jpg" width="300" height="400" alt="Охрид" class="galerijaImg1">
+            <img src="vafli.jpg" width="300" height="400" alt="Вафли" class="galerijaImg1">
+           <button onclick="Counter5(button5)" id="button5"  class="firstButtonLike">
+                <span id="heart5" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes5" style="color:black">0</label>
+            </button> <button onclick="Counter6(button6)" id="button6"  class="buttonLike">
+                <span id="heart6" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes6" style="color:black">0</label>
+            </button>
+            <button onclick="Counter7(button7)" id="button7"  class="buttonLike2">
+                <span id="heart7" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes7" style="color:black">0</label>
+            </button>
+            <button onclick="Counter8(button8)" id="button8"  class="buttonLike2">
+                <span id="heart8" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes8" style="color:black; font-size: 1em">0</label>
+            </button>
+        </div>
+            <form  class="formMargin">
+            <br>
+            <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input5">
+            <input type="button" value="Постирај" id="k5" onclick="komentiraj(this)">
+            <div id="komentar5"></div>
+            </form>
+           
+            <form class="formMargin">
+            <br>
+                <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input6">
+                <input type="button" value="Постирај" id="k6" onclick="komentiraj(this)">
+                <div id="komentar6"></div>
+                </form>
+                
+                <form  class="formMargin">
+                <br>
+                <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input7">
+                <input type="button" value="Постирај" id="k7" onclick="komentiraj(this)">
+                <div id="komentar7"></div>
+            </form>
+           
+            <form class="formMargin">
+            <br>
+                <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input8">
+                <input type="button" value="Постирај" id="k8" onclick="komentiraj(this)">
+                <div id="komentar8"></div>
+            </form>
+        </div>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <p>
+        <div> <div>
+            <img src="macinja.jpg" width="300" height="400" alt="Мачиња" class="galerijaImg1">
+            <img src="mace1.jpg" width="300" height="400" alt="Маче1" class="galerijaImg1">
+            <img src="mace2.jpg" width="300" height="400" alt="Маче2" class="galerijaImg1">
+            <img src="mace3.jpg" width="300" height="400" alt="Маче3" class="galerijaImg1">
+            <button onclick="Counter9(button9)" id="button9"  class="firstButtonLike">
+                <span id="heart9" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes9" style="color:black">0</label>
+            </button>
+            <button onclick="Counter10(button10)" id="button10"  class="buttonLike">
+                <span id="heart10" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes10" style="color:black">0</label>
+            </button>
+            <button onclick="Counter11(button11)" id="button11"  class="buttonLike2">
+                <span id="heart11" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes11" style="color:black">0</label>
+            </button>
+            <button onclick="Counter12(button12)" id="button12"  class="buttonLike2">
+                <span id="heart12" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes12" style="color:black">0</label>
+            </button>
+            </div>
+            <form  class="formMargin">
+            <br>
+                <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input9">
+                <input type="button" value="Постирај" id="k9" onclick="komentiraj(this)">
+                <div id="komentar9"></div>
+                </form>
+                <form class="formMargin">
+                <br>
+                    <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input10">
+                    <input type="button" value="Постирај" id="k10" onclick="komentiraj(this)">
+                    <div id="komentar10"></div>
+                    </form>
+                    <form  class="formMargin">
+                    <br>
+                    <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input11">
+                    <input type="button" value="Постирај" id="k11" onclick="komentiraj(this)">
+                    <div id="komentar11"></div>
+                </form>
+                <form class="formMargin">
+                <br>
+                    <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input12">
+                    <input type="button" value="Постирај" id="k12" onclick="komentiraj(this)">
+                    <div id="komentar12"></div>
+                </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <p>
+        <div> <div>
+            <img src="ohrid.jpg" width="300" height="400" alt="Охрид" class="galerijaImg1">
+            <img src="belgrad1.jpg" width="300" height="400" alt="Белград" class="galerijaImg1">
+            <img src="berovo.jpg" width="300" height="400" alt="Берово" class="galerijaImg1">
+            <img src="omlet.jpg" width="300" height="400" alt="Омлет" class="galerijaImg1">
+            <button onclick="Counter13(button13)" id="button13"  class="firstButtonLike" >
+                <span id="heart13" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes13" style="color:black">0</label>
+            </button>
+            <button onclick="Counter14(button14)" id="button14"  class="buttonLike">
+                <span id="heart14" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes14" style="color:black">0</label>
+            </button>
+            <button onclick="Counter15(button15)" id="button15"  class="buttonLike2">
+                <span id="heart15" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes15" style="color:black">0</label>
+            </button>
+            <button onclick="Counter16(button16)" id="button16"  class="buttonLike2">
+                <span id="heart16" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes16" style="color:black">0</label>
+            </button>
+            </div>
+            <form class="formMargin">
+                <br>
+                    <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input13">
+                    <input type="button" value="Постирај" id="k13" onclick="komentiraj(this)">
+                    <div id="komentar13"></div>
+            </form>
+            <form class="formMargin">
+                <br>
+                    <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input14">
+                    <input type="button" value="Постирај" id="k14" onclick="komentiraj(this)">
+                    <div id="komentar14"></div>
+            </form>
+            <form class="formMargin">
+                <br>
+                    <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input15">
+                    <input type="button" value="Постирај" id="k15" onclick="komentiraj(this)">
+                    <div id="komentar15"></div>
+            </form>
+            <form class="formMargin">
+                <br>
+                    <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input16">
+                    <input type="button" value="Постирај" id="k16" onclick="komentiraj(this)">
+                    <div id="komentar16"></div>
+            </form>
+        </div>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <p>
+        <div> <div>
+            <img src="spageti.jpg" width="300" height="400" alt="Шпагети" class="galerijaImg1">
+            <img src="caruso.jpg" width="300" height="400" alt="Карусо" class="galerijaImg1">
+            <img src="fitnesshouse.jpg" width="300" height="400" alt="Фитнес Хаус" class="galerijaImg1">
+            <img src="chocolate.jpg" width="300" height="400" alt="Чоколадо" class="galerijaImg1">
+            <button onclick="Counter17(button17)" id="button17"  class="firstButtonLike">
+                <span id="heart17" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes17" style="color:black">0</label>
+            </button>
+            <button onclick="Counter18(button18)" id="button18"  class="buttonLike">
+                <span id="heart18"style="font-size: x-large;">&#10084;</span> 
+                <label id="likes18" style="color:black">0</label>
+            </button>
+            <button onclick="Counter19(button19)" id="button19"  class="buttonLike2">
+                <span id="heart19" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes19" style="color:black">0</label>
+            </button>
+            <button onclick="Counter20(button20)" id="button20"  class="buttonLike2">
+                <span id="heart20" style="font-size: x-large;">&#10084;</span> 
+                <label id="likes20" style="color:black">0</label>
+            </button>
+            </div>
+            <form class="formMargin">
+                <br>
+                    <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input17">
+                    <input type="button" value="Постирај" id="k17" onclick="komentiraj(this)">
+                    <div id="komentar17"></div>
+            </form>
+            <form class="formMargin">
+                <br>
+                    <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input18">
+                    <input type="button" value="Постирај" id="k18" onclick="komentiraj(this)">
+                    <div id="komentar18"></div>
+            </form>
+            <form class="formMargin">
+                <br>
+                    <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input19">
+                    <input type="button" value="Постирај" id="k19" onclick="komentiraj(this)">
+                    <div id="komentar19"></div>
+            </form>
+            <form class="formMargin">
+                <br>
+                    <input type="text" size="31" maxlength="100" placeholder="Напиши коментар..." id="input20">
+                    <input type="button" value="Постирај" id="k20" onclick="komentiraj(this)">
+                    <div id="komentar20"></div>
+            </form>
+        </div>
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
          <footer>
             <p class="center"> <a href="#">
                 Назад
@@ -27,5 +317,6 @@
             </p>
             <img src="logo6.png" width="180" height="50" alt="Сандра Петрушевска" class="centerPic">
         </footer>
+       
     </body>
 </html>

@@ -62,19 +62,21 @@ nav ul li a {
   footer p{
       background-color: peachpuff;
   }
-  .repeat {
-      background-repeat: repeat-x;
-  }
+
  div {
-     width:400px;
-     height:100px;
-     background-color: papayawhip;
-     float:left;
-     text-align: center;
-     box-shadow: 10px 10px 20px dimgray;
-     padding-top: 17px;
- }
+    padding-top: 17px;
+}
+#box1 {
+   text-align: center;
+   width:400px;
+   height:100px;
+   background-color: papayawhip;
+   float:left;
+   box-shadow: 10px 10px 20px dimgray;
+
+}
  #box2 {
+     text-align: center;
      width:600px;
      height:200px;
      background-color: pink;
@@ -83,6 +85,7 @@ nav ul li a {
      box-shadow: 10px 10px 20px dimgray;
  }
  #box3 {
+     text-align: center;
      margin-left: 100px;
      width: 700px;
      height: 410px;
@@ -90,6 +93,57 @@ nav ul li a {
      text-align: center;
      float: left;
      border-radius: 5px;
+     box-shadow: 10px 10px 20px dimgray;
+ }
+ #box4 {
+     text-align:left;
+     width: auto;
+     height: auto;
+     float:left;
+     margin-left: 90px;
+     margin-right: 50px;
+     font-size: 1em;
+     font-weight: bold;
+ }
+ #box5 {
+     float:right;
+ }
+ #box6{
+     float:left;
+ }
+ #box7{
+    margin-left: 0px;
+    background-color:cornflowerblue;
+ }
+ #box8{
+    background-color:coral;
+    margin-left: 0px;
+ }
+ #box9{
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color:gold;
+ }
+ #box10 {
+    background-color: mediumpurple;
+    margin-left: 0px;
+ }
+ #box11{
+     margin-left:55px;
+ }
+ #box12 {
+    background-color:royalblue;
+    margin-left: 0px;
+ }
+ #box13 {
+    background-color: salmon;
+    margin-left: 0px;
+ }
+ .contactPic {
+     margin-left: 100px;
+     border: 3px solid peachpuff;
+     border-radius: 7px;
+     padding: 7px;
  }
 .rightPic1{
     margin-left: 50px;
@@ -120,17 +174,160 @@ nav ul li a {
     padding: 7px;
 }
 .contactPic1 {
-    margin-left: 20px;
-    margin-top: 80px;
+    margin-left: 0px;
+    margin-top: 40px;
 }
 .contactPic2 {
-    margin-left: 100px;
-    margin-top: 80px;
+    margin-left: 30px;
+    margin-top: 40px;
 }
-.transition{
-    -webkit-transition: -webkit-transform 4s;
-    -moz-transition: -moz-transform 4s;
-    -o-transition: -o-transform 4s;
-    transition: transform 4s;
+.contactPic3 {
+    margin-left: 30px;
+    margin-top: 40px;
 }
- 
+article {
+margin-left:70px;
+margin-right: 50px;
+width:610px;
+height:auto;
+text-align: center;
+border: 2px solid lavender;
+padding: 4px;
+}
+article h2{
+    color:white;
+    
+}
+.articleLeft {
+    float:left;
+}
+.articleMargin {
+    margin-left: 40px;
+    float:left;
+}
+.articleMargin2 {
+    margin-left: 18px;
+    float:left;
+}
+.articleMargin3{
+    margin-right:50px;
+    float:center;
+}
+article input[type=submit]{
+float: center;
+font-size: 14px;
+font-weight: bold;
+color:white;
+}
+
+
+.botton1{
+    background-color:cornflowerblue;
+    color:white;
+}
+
+.botton2 {
+    background-color: coral;
+    color:white;
+}
+.botton3{
+    background-color: gold;
+    color:white;
+}
+
+.botton4{
+    background-color: mediumpurple;
+    color:white;
+    }
+.botton5{
+    background-color: royalblue;
+    color: white;
+    }
+.botton6{
+    background-color: salmon;
+    }
+.botton7{
+    background-color: peachpuff;
+    }
+.galerijaImg1 {
+    margin-left: 55px;
+    margin-bottom: 0px;
+    border: 3px solid peachpuff;
+    transition: transform .2s;
+    border-radius: 4px;
+    
+}
+.galerijaImg1:hover {
+    transform: scale(1.5); 
+}
+.position{
+    margin-top:0px;
+    margin-left:55px;
+    bottom:0px;
+    padding-top: 0px;
+    
+}
+.formMargin {
+    margin-left:55px;
+    margin-top:0px;
+    float:left;
+}
+.blog {
+     margin-left: 70px;
+}
+input[type=button]{
+    border: 2px solid burlywood;
+    background-color: bisque;
+    border-style: groove;
+    padding: 3px;
+}
+#start {
+    display: none;
+}
+#start1 {
+    display: none;
+}
+#start2 {
+    display: none;
+} 
+#start3{
+    display: none;
+}
+#start4{
+    display: none;
+}
+#start5{
+    display: none;
+}
+.view {
+    font-size: 15px;
+    color:white;
+}
+
+.firstButtonLike{
+    border:none;
+    background-color: white;
+    margin-left: 55px;
+
+}
+
+.buttonLike{
+    border:none;
+    background-color: white;
+    margin-left: 310px;
+}
+.buttonLike2{
+    border:none;
+    background-color: white;
+    margin-left: 315px;
+}
+.firstButtonLike13{
+    border:none;
+    background-color: white;
+    margin-left: 0px;
+}
+.data{
+    float:left;
+    margin-left: 10px;
+    margin-top: 0px;
+}

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Anketa za posetiteli</title>
         <link rel="stylesheet" type="text/css" href="stilovi.css">
+        <script src="anketaJava.js"></script>
     </head>
     <body>
         <header>
@@ -39,21 +40,21 @@
                 <input type="email" id="email" placeholder="name@gmail.com">
                 </label>
              </p>
-             <p class="center">
-                 <label>
-                     Ваша оценка:
-                    0 <input type="range" 
-                    min="0"
-                    max="10"
-                    value="5">10
-                 </label>
-             </p>
+
+              <p class="center">
+                  <label>
+                      Ваша оценка (1-5): 
+                      <input type="number" id="ocenka"  min="1" max="5">
+                      <input id = "potvrda" type = "button" value = "Потврди" class="botton6">
+                  </label>
+                  <p id="rezultat" class="center"></p>
+              </p>
              <p class="center"> 
                      Дали се исполнети Вашите очекувања? <br>
                      <select>
                      <option>Воошто не се исполнети</option>
-                     <option selected>Донекаде се исполнети.</option>
-                     <option>Целосно се исполнети.</option>
+                     <option selected>Донекаде се исполнети</option>
+                     <option>Целосно се исполнети</option>
                  </select>
              </p>
              <p class="center">
@@ -68,11 +69,11 @@
              <p class="center">
                  Како дознавте за странава? <br>
                  <input type="radio" id="socijalni" name="naogjanje">
-                 <label for="socijalni">Ја видов на социјални медиуми.</label> <br>
+                 <label for="socijalni">Ја видов на социјални медиуми</label> <br>
                  <input type="radio" id="slusnav" name="naogjanje">
-                 <label for="slusnav">Ми ја покажа пријател/познаник.</label> <br>
+                 <label for="slusnav">Ми ја покажа пријател/познаник</label> <br>
                  <input type="radio" id="sam" name="naogjanje">
-                 <label for="sam">Најдов линк додека бев на друга WEB страна.</label> <br>
+                 <label for="sam">Најдов линк на друга WEB страна</label> <br>
                  <input type="radio" id="drugo" name="naogjanje">
                  <label for="drugo">Друго</label>
              </p>
