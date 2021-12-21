@@ -31,10 +31,10 @@ nav ul li a {
     padding: 15px 16px;
     text-align: center;
   }
-  .active{
-      background-color: lightgreen;
+.active{
+    background-color: lightgreen;
   }
-  li a:hover:not(.active) {
+li a:hover:not(.active) {
     background-color:sandybrown;
   }
   
@@ -42,28 +42,28 @@ nav ul li a {
     text-align: center;
     font-weight: bold;
   }
-  .centerPic {
+.centerPic {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .header{
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      font-size:xx-large;
-      color:darkslategray;
-      top:5px;
-      text-align: center;
-      text-shadow: 5px 5px 10px dimgray;
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:xx-large;
+    color:darkslategray;
+    top:5px;
+    text-align: center;
+    
+}
+header p{
+    background-color: peachpuff;
   }
-  header p{
-      background-color: peachpuff;
-  }
-  footer p{
-      background-color: peachpuff;
+footer p{
+    background-color: peachpuff;
   }
 
- div {
+div {
     padding-top: 17px;
 }
 #box1 {
@@ -82,7 +82,7 @@ nav ul li a {
      background-color: pink;
      float:left;
      text-align: left;
-     box-shadow: 10px 10px 20px dimgray;
+     box-shadow: 10px 10px 10px dimgray;
  }
  #box3 {
      text-align: center;
@@ -275,6 +275,9 @@ color:white;
 .blog {
      margin-left: 70px;
 }
+.blog1{
+    margin-left: 680px;
+}
 input[type=button]{
     border: 2px solid burlywood;
     background-color: bisque;
@@ -321,13 +324,52 @@ input[type=button]{
     background-color: white;
     margin-left: 315px;
 }
-.firstButtonLike13{
+.buttonLike3{
     border:none;
     background-color: white;
-    margin-left: 0px;
+    margin-left: 325px;
+
 }
 .data{
     float:left;
     margin-left: 10px;
     margin-top: 0px;
+}
+.dobredojdovte {
+    color:rgb(153, 68, 62);
+    margin-top: 200px;
+    margin-left: 500px;
+     font-size: 70px; 
+}
+.zamene {
+    font-size: large;
+    font-weight: bold;
+    color:rgb(153, 68, 62);
+}
+
+figure {
+    display: inline-block;
+    margin-left: 0px;
+}
+
+figcaption {
+    text-align: center;
+    margin-left:0px;
+}
+.buttonLikeD{
+    border:none;
+    background-color: white;
+    margin-left: 55px;
+
+}
+.galerijaImg {
+    margin-left: 60px;
+    margin-bottom: 0px;
+    border: 3px solid peachpuff;
+    transition: transform .2s;
+    border-radius: 4px;
+    
+}
+.galerijaImg:hover {
+    transform: scale(1.5); 
 }

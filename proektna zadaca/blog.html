@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="stilovi.css">
 
 <script> 
-    
+   
     function Function() {
       var stop = document.getElementById("stop");
       var start = document.getElementById("start");
@@ -109,6 +109,34 @@
     <script src="blogJava4.js"></script>
     <script src="blogJava5.js"></script>
     <script src="blogJava6.js"></script>
+    <script>
+     // var siteB="";
+      function start(){
+      var blogovi=document.getElementById("dodadenTekst").innerHTML=localStorage.getItem("novblog");
+      }      
+      function prikaci(){ 
+      var dat=new Date();
+      var mesec=dat.getMonth()+1;
+      var den=dat.getDate();
+      var godina=dat.getFullYear();
+      var d=den+"."+mesec+"."+godina;
+      var n=document.getElementById("naslov").value;
+      var t=document.getElementById("tekst").value;
+      var nov="<article>"+"<div>"+"<p>"+d+"</p>"+"<p> <h1>" +n+"</h1>"+"</p>"+"</div>"+"<p>"+t+"</p>"+"</article>";
+      var siteB=localStorage.getItem("novblog");
+      if(siteB==null){
+        localStorage.setItem("novblog",nov);
+        var doc=document.getElementById("dodadenTekst").innerHTML=localStorage.getItem("novblog");
+      }
+      else{
+      siteB+=nov;
+      localStorage.setItem("novblog",siteB);
+      var doc=document.getElementById("dodadenTekst").innerHTML=localStorage.getItem("novblog");
+      }
+      
+    }
+    window.addEventListener("load", start, false);
+    </script>
     <body>
         <header>
             <img src="logo6.png" width="180" height="50" alt="Сандра Петрушевска"> 
@@ -221,12 +249,15 @@
           <br>
           shest
         </p>
+   <p class="blog1"><em>Внесени блогови:</em></p>
+      <div id="dodadenTekst" style="margin-left: 370px;"></div>
         <p class="blog">
             Прикачување на блог:
             <form class="blog" >
-               <textarea rows="10" cols="80" placeholder="Место за вашиот блог" ></textarea>
+              <label>Наслов: </label><input type="text" id="naslov"> <br> <br>
+               <textarea rows="10" cols="80" placeholder="Место за вашиот блог" id="tekst" ></textarea>
                 <br>
-                <input type="submit" value="Прикачи" class="botton7">
+                <input type="button" value="Прикачи" class="botton7" onclick="prikaci()">
             </form>
             
         </p>

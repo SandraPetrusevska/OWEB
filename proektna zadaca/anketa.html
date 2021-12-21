@@ -26,25 +26,25 @@
         </p>
         <form method="post" autocomplete="on">
             <p class="center">
-                <label> Вашето име:
-                <input type="text" id="ime" placeholder="Внесете име" > 
+                <label> Вашето име:*
+                <input type="text" id="ime" placeholder="Внесете име" required > 
                 </label>
             </p>
             <p class="center">
-                <label>Вашето презиме:
-                <input type="text" id="prezime" placeholder="Внесете презиме">
+                <label>Вашето презиме:*
+                <input type="text" id="prezime" placeholder="Внесете презиме" required>
                 </label>
             </p>
             <p class="center">
-                <label>Вашиот e-mail:
-                <input type="email" id="email" placeholder="name@gmail.com">
+                <label>Вашиот e-mail:*
+                <input type="email" id="email" placeholder="name@domain.com" required>
                 </label>
              </p>
 
               <p class="center">
                   <label>
-                      Ваша оценка (1-5): 
-                      <input type="number" id="ocenka"  min="1" max="5">
+                      Ваша оценка (1-5):*
+                      <input type="number" id="ocenka"  min="1" max="5" required>
                       <input id = "potvrda" type = "button" value = "Потврди" class="botton6">
                   </label>
                   <p id="rezultat" class="center"></p>
@@ -83,7 +83,7 @@
 
              </p>
              <p class="center">
-                 <input type="submit" value="Поднеси">
+                 <input type="submit" value="Поднеси" style="background-color: peachpuff; ">
              </p>
         </form>
         <footer>

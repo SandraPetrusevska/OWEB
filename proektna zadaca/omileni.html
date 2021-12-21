@@ -4,7 +4,61 @@
         <meta charset="utf-8">
         <title>Омилени нешта</title>
         <link rel="stylesheet" type="text/css" href="stilovi.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
+    <script>
+        $(document).ready(function(){
+        $("#h").click(function(){
+        $("#hr").show();
+        });
+        $("#zh").click(function(){
+        $("#os").show();
+        });
+        $("#zh").click(function(){
+        $("#cs").show();
+        });
+        $("#th").click(function(){
+        $("#s").show();
+        });
+        $("#th").click(function(){
+        $("#bo").show();
+        });
+        $("#bh").click(function(){
+        $("#p").show();
+        });
+        $("#bh").click(function(){
+        $("#c").show();
+        });
+        $("#d").click(function(){
+        $("#v").show();
+        });
+        $("#d").click(function(){
+        $("#i").show();
+        });
+        $("#of").click(function(){
+        $("#lr").show();
+        });
+        $("#of").click(function(){
+        $("#m").show();
+        });
+        $("#of").click(function(){
+        $("#ht").show();
+        });
+        $("#of").click(function(){
+        $("#f").show();
+        });
+        $("#lr").click(function(){
+        $("#lr2").show();
+        });
+        $("#m").click(function(){
+        $("#m2").show();
+        });
+        $("#ht").click(function(){
+        $("#ht2").show();
+        });
+    
+        });
+    </script>
     <body>
         <header>
            <img src="logo6.png" width="180" height="50" alt="Сандра Петрушевска"> 
@@ -20,16 +74,16 @@
         </nav>
         </header> 
         <p class="header">Омилени нешта</p>
-       <ol>  
-        <li> <h2>Омилена храна <img src="foodlogo.png" height="40" width="30"></h2> 
+       <ol >  
+        <li> <h2 id="h">Омилена храна <img id="slikaH" src="foodlogo.png" height="40" width="30" ></h2> 
         <p>
-            <ul>
-           <li> <h3>Здрава храна</h3> </li>
+            <ul id="hr" style="display: none;">
+           <li > <h3 id="zh">Здрава храна</h3> </li>
             Здрава исхрана е конзумирање на здрава, разновидна и по можност што помалку обработена храна.
             За да ги обавува дневните активности и за да биде здраво, човечкото тело има потреба од 90 есенцијални хранливи материи што се неопходни за нормален раст, развој и многу други процеси: 60 минерали, 16 витамини, 12 амино киселини и 3 незаситени масти. 
             Мојот омилен ресторан за здрава храна е <a href="https://fitnesshouse.mk/">Fitness House</a>.
-            <ul>
-                <li>
+            <ul  >
+                <li id="os"  style="display: none;">
                 <h4>Овесна каша</h4>
             <p> <div id="box1">  <em>Овесна каша </em> е мојот омилен појадок! Се подготвува многу брзо и едноставно, а исто така може многу да се 
                 експериментира со додатоци, кои што го подобруваат вкусот. </div>
@@ -37,71 +91,73 @@
                 <img src="ovesnakasa2.png" width="200" height="200" alt="Овесна каша" class="rightPic2" >
                 <img src="ovesnakasa3.png" width="200" heigh="200" alt="Овесна каша" class="rightPic3" > </p>
                 </li>
-                <li><h4>Цезар салата</h4></li>
+                <li id="cs" style="display: none;"><h4>Цезар салата</h4>
                 <div id="box1"><em>Цезар салата</em> е нешто што го јадам за ручек или вечера. Оваа салата е светски позната и ја има во секој
                 ресторан. Во летниот период посебно ја сакам, поради тоа што е лесна и освежува. </div>
                 <img src="cezar.png" width="300" height="200" alt="Цезар салата" class="rightPic1">
-                <img src="cezar2.png" width="300" height="200" alt="Цезар салата" class="rightPic2">
+                <img src="cezar2.png" width="300" height="200" alt="Цезар салата" class="rightPic2"></li>
             </ul>
         </p>
          <p>
-           <li><h3>Традиционална храна</h3></li>
+           <li><h3 id="th">Традиционална храна</h3></li>
            <ul> 
-               <li> <h4>Сарма</h4>
+               <li id="s" style="display: none;"> <h4>Сарма</h4>
            <div id="box1"> Дефинитивно, моето омилено традиционално јадење е <em> <strong>сармата</strong></em>!
             Сарма е едно од најпознатите македонски традиционални јадења. 
             Повеќе за ова прекрасно јадење може да прочитате на следниот <a href="https://mk.wikipedia.org/wiki/%D0%A1%D0%B0%D1%80%D0%BC%D0%B0">линк</a>. </div>
             <img src="sarma.jpg" width="300" height="200" alt="Сарма" class="rightPic1"> 
             <img src="sarma2.png" width="300" height="200" alt="Сарма" class="rightPic2"> </li>
-            <li> <h4>Бел ориз со пилешко</h4>
+            <li id="bo" style="display: none;"> <h4>Бел ориз со пилешко</h4>
               <div id="box1"> <em>Бел ориз</em> е јадење кое се подготвува во сечиј дом. Во комбинација со пилешко месо има совршен вкус. Исто така, белиот ориз
                 е традиционална, но и здрава храна. </div>
                 <img src="beloriz.png" width="300" height="200" alt="Бел ориз" class="rightPic1">
                 <img src="oriz2.png" width="300" height="200" alt="Бел ориз" class="rightPic2">
             </li>
            </ul>
-           <li> <h3>Брза храна</h3></li>
+           <li> <h3 id="bh">Брза храна</h3></li>
            Иако брзата храна воошто не е здрава, полна е со маснотии, шеќери и калории, сепак сите понекогаш ја конзумираме.
            <ul>
-               <li> <h4>Пица</h4>
+               <li id="p" style="display: none;" > <h4>Пица</h4>
               <div id="box1"> <em>Пица</em> е познато италијанско јадење. Направена е од тенко, округло тесто на кое покрај сосот од домати можат да се 
                најдат разни видови сирење, месо, зеленчук, овошје, зачини и други состојки во зависност од вкусот. </div>
                <img src="pica.png" width="250" height="150" alt="Пица" class="rightPic1">
                <img src="pica2.png" width="250" height="150" alt="Пица" class="rightPic2">
                </li>
-               <li> <h4>Чизбургер</h4>
+               <li id="c" style="display: none;"> <h4>Чизбургер</h4>
               <div id="box1"> <em>Чизбургер</em> е сличен со хамбургер, разликата е во тоа што во чизбургер има некој вид на сирење (најчесто 
                кашкавал). Овој бургер може да се најде во секоја продавница за брза храна. </div>
                <img src="cheeseburger.png" width="250" height="150" alt="Чизбургер" class="rightPic1">
                <img src="cheeseburger2.png" width="250" height="150" alt="Чизбургер" class="rightPic2">
             </li>
            </ul>
-           <li> <h3>Десерти</h3>
+           <li> <h3 id="d">Десерти</h3>
         <ul>
-            <li> <h4>Вафли</h4>
+            <li id="v"style="display: none;"> <h4>Вафли</h4>
             <div id="box1"> <em>Вафлите</em> се подготвуваат на едноставен начин, во посебен тостер кој што е наменет за подготовка на истите. 
             Потоа, на нив се додаваат дотатоци по желба, може да бидат овошни, чоколадни..  </div>
             <img src="vafli1.png" width="200" height="250" alt="Вафли" class="rightPic1">
             <img src="vafli2.png" width="200" height="250" alt="Вафли" class="rightPic2">
             <img src="vafli3.png" width="200" height="250" alt="Вафли" class="rightPic3">
             </li>
-            <li> <h4>Индијанки</h4></li>
+            <li id="i" style="display: none;"> <h4>Индијанки</h4>
             <div id="box1"><em>Индијанки</em> се колачиња кои ги обожавам уште од дете. Се приготвуваат на малку потежок начин, но достапни се и во сите слаткарници. 
             Доколку Ве интересира повеќе за начинот на подготовка, можете да го посетите следниов <a href="https://moirecepti.mk/post/%D1%81%D0%BB%D0%B0%D1%82%D0%BA%D0%B0%D1%80%D1%81%D0%BA%D0%B8-%D0%B8%D0%BD%D0%B4%D0%B8%D1%98%D0%B0%D0%BD%D0%BA%D0%B8"> линк</a>.</div>
             <img src="indijanki.png" width="350" height="250" alt="Индијанки" class="rightPic1">
             <img src="indijanki2.png" width="350" height="250" alt="Индијанки" class="rightPic2">
+        </li>
         </ul>
         </li>
         </ul>
         </p>
         </li>
         <li>
-            <h2>Омилени филмови <img src="filmlogo.png" width="40" height="40" alt="Филм лого"> </h2>
-            <p>
+            <h2 id="of">Омилени филмови <img src="filmlogo.png" width="40" height="40" alt="Филм лого"> </h2>
+            <p id="f"style="display: none;">
             Филмовите го исполнуваат моето слободно време. Гледам филмови од секаков жанр: акција, драма, комедија, трилер...
             Филмови кои ми оставија најсилен впечаток се:
             <ul>
-             <li><h3>The Lord of the Rings (Господарот на прстените) </h3>
+            <li id="lr"style="display: none;"><h3>The Lord of the Rings </h3>
+            <div id="lr2" style="display:none">
            <div id="box2"> <em> Господарот на прстените </em> e филмска трилогија, работена според книгите на Џ.Р.Р. Толкин. 
              Серијалот се состои од следните филмови: 
              <ol>
@@ -111,8 +167,17 @@
              </ol>
              Режисер на овој филм е Питер Џексон. Главен лик е Фродо Бегинс. Доколку сакате повеќе информации,
              слободно посетете го следниов <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings_(film_series)">линк</a>. </div> 
-             <img src="lordOfTheRings.png" width="400"  height="200" alt="Господарот на прстените" class="rightPic3"> </li> <br>
-            <li><h3>The Matrix (Матрица)</h3>
+             <img src="lordOfTheRings.png" width="400"  height="200" alt="Господарот на прстените" class="rightPic3">
+            <br> <br>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/V75dMMIW2B4">
+            </iframe>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/hYcw5ksV8YQ" style="margin-left:45px;">
+            </iframe>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/r5X-hFf6Bwo" style="margin-left:45px;">
+            </iframe>
+            </li></div> <br>
+            <li id="m" style="display: none;" ><h3 >The Matrix </h3>
+            <div id="m2" style="display: none;">
            <div id="box2"> <em>The Matrix</em> е американски филм, кој е направен според сценарио и режија на сестрите Вачовски (Енди и Лари). 
             Матрикс е научно-фантастичен, акционен филм, во кој што се зборува за тоа како самите може да си искреираме свој свет и да бидеме господари на нашиот свет.
             Овој филм има своја филозофија и во филмот е прикажана малку фантастично, но доколку се задлабочиме во филмот ќе ја видиме нашата друга реалност и пораката во филмот.
@@ -123,9 +188,17 @@
                 <li>The Matrix Revolutions</li>
             </ol> </div>
             <img src="theMatrix.png" width="400" height="200" alt="Матрица" class="rightPic3">
-            </li>  <br>
-             <li> <h3>The Hobbit (Хобит) </h3>
-            <div id="box2"> Филм кој ми остави силен впечаток е <em>The Hobbit</em>. Постојат три дела, кои што се авантуристички, со многу фантазија.
+            <br> <br>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/vKQi3bBA1y8">
+            </iframe>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/kYzz0FSgpSU" style="margin-left:45px;">
+            </iframe>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/hMbexEPAOQI" style="margin-left:45px;">
+            </iframe>
+            </li> </div>  <br>
+             <li id="ht" style="display: none;"> <h3>The Hobbit</h3>
+            <div id="ht2" style="display: none;">
+            <div id="box2" > Филм кој ми остави силен впечаток е <em>The Hobbit</em>. Постојат три дела, кои што се авантуристички, со многу фантазија.
              Трите филма се:
             <ol>
                 <li>An Unexpected Journey </li>
@@ -135,7 +208,15 @@
             Режисер е истиот како и на Господарот на Прстените, Питер Џексон. Всушност, овој филм е продолжение на Господарот на прстените.
             </div>
             <img src="theHobbit.png" width="400" height="200" alt="Хобит" class="rightPic3">
+            <br> <br>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/SDnYMbYB-nU">
+            </iframe>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/OPVWy1tFXuc" style="margin-left:45px;">
+            </iframe>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/iVAgTiBrrDA" style="margin-left:45px;">
+            </iframe>
             </li>
+            </div>
             </ul>
             </p>
          </li>

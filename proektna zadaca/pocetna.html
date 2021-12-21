@@ -4,7 +4,24 @@
         <meta charset="utf-8">
         <title>Сандра Петрушевска</title>
         <link rel="stylesheet" type="text/css" href="stilovi.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
+<script>
+    var code = ["Д","о","б","р","е","д","о","ј","д","о","в","т","е","!"];
+    var sentence = '';
+    var index = 0;
+    var intervalId = setInterval(codein, 150);
+    console.log("text length = " + code.length);
+    function codein(){
+        console.log("index = " + index);
+        sentence += code[index];
+        $('#hello').text(sentence);
+        index++;
+        if (index == code.length) {
+        clearInterval(intervalId);
+    }
+}
+</script>
 <body>
     <p> <header>
     <img src="logo6.png" width="180" height="50" alt="Сандра Петрушевска">
@@ -20,9 +37,35 @@
    </nav>
     </header>
     </p>
+    <section style="background-image: url(pocetna-pozadina4.png); position: absolute; background-size: cover;height: 80%;width: 100%;">
+   <p class="dobredojdovte" id="hello"></p>
+  <a href="#zaMene"> <input type="button" value="За мене" style="margin-left:710px; border-radius: 2px;" class="zamene"> </a>
+    </section>
     <br>
+    <br>
+    <br>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> <br>
+    <br> <br>
+    <br> <br>
+    <br>
+    <br>
+    <br> <br> <br>
+<section id="zaMene">
     <p><div id="box3">
-    <h3>Добредојдовте!</h3> 
+    <h3>Здраво!</h3> 
     Јас сум Сандра Петрушевска. Родена сум во Куманово, Македонија и сè уште живеам во Куманово. Основно образование завршив во
     ООУ ,,Кочо Рацин", а средно во СОУ Гимназија ,,Гоце Делчев", на природно-математички смер, комбинација А. Образованието го продолжив
     на Факултетот за електротехника и информациски технологии, при Универзитетот Св. ,,Кирил и Методиј"- Скопје и сум на смер Компјутерски технологии
@@ -37,9 +80,12 @@
     </div>
        <img src="slika1.jpg" width="350" height=450" alt="Сандра Петрушевска" class="homePic">
      </p>
+     </section>
+     <br>
+     <br>
      <br>
     <footer>
-        <p class="center">&copy Sandra Petrushevska</p>
+        <p class="center">&copy Sandra Petrushevska, 2021</p>
         <img src="logo6.png" width="180" height="50" alt="Сандра Петрушевска" class="centerPic">
     </footer>
 </body>
